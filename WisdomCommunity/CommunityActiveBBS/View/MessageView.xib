@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="MessageView">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-xv-C2z">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="icon_community_prise"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzQ-WK-u9b">
+                    <rect key="frame" x="60" y="0.0" width="1" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="jEG-tU-0aC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExD-uK-jvw">
+                    <rect key="frame" x="61" y="0.0" width="60" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="icon_community_pop"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ExD-uK-jvw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="369-pJ-26D"/>
+                <constraint firstAttribute="bottom" secondItem="gRB-xv-C2z" secondAttribute="bottom" id="3hO-mj-YmD"/>
+                <constraint firstAttribute="trailing" secondItem="ExD-uK-jvw" secondAttribute="trailing" id="5ld-5c-ZVg"/>
+                <constraint firstItem="QzQ-WK-u9b" firstAttribute="leading" secondItem="gRB-xv-C2z" secondAttribute="trailing" id="6Vg-7p-VHG"/>
+                <constraint firstAttribute="bottom" secondItem="QzQ-WK-u9b" secondAttribute="bottom" id="8JH-0S-c3I"/>
+                <constraint firstItem="gRB-xv-C2z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="B3T-nK-Kj5"/>
+                <constraint firstItem="ExD-uK-jvw" firstAttribute="leading" secondItem="QzQ-WK-u9b" secondAttribute="trailing" id="Ceg-i2-JCC"/>
+                <constraint firstItem="QzQ-WK-u9b" firstAttribute="leading" secondItem="gRB-xv-C2z" secondAttribute="trailing" id="JWK-f1-B1a"/>
+                <constraint firstAttribute="bottom" secondItem="ExD-uK-jvw" secondAttribute="bottom" id="PQy-Q6-P45"/>
+                <constraint firstItem="QzQ-WK-u9b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YwT-YV-Kad"/>
+                <constraint firstItem="gRB-xv-C2z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="am0-6r-BWV"/>
+                <constraint firstItem="ExD-uK-jvw" firstAttribute="width" secondItem="gRB-xv-C2z" secondAttribute="width" id="ycB-fT-NQa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="MessageBtn" destination="ExD-uK-jvw" id="eHV-Pk-VE6"/>
+                <outlet property="priseBtn" destination="gRB-xv-C2z" id="4w3-ky-MMg"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_community_pop" width="13" height="12"/>
+        <image name="icon_community_prise" width="21" height="17"/>
+    </resources>
+</document>

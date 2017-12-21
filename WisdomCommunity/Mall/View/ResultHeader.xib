@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ResultHeader" insetsLayoutMarginsFromSafeArea="NO" id="c9e-6e-CYf" customClass="ResultHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rx-4J-O8d">
+                    <rect key="frame" x="0.0" y="5" width="124" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3rx-4J-O8d" secondAttribute="height" multiplier="31:10" id="mB6-qc-4XT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="价格"/>
+                    <connections>
+                        <action selector="priceAction:" destination="c9e-6e-CYf" eventType="touchUpInside" id="cb1-K9-n81"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkD-7o-BB3">
+                    <rect key="frame" x="125" y="5" width="124" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="GkD-7o-BB3" secondAttribute="height" multiplier="31:10" id="WAc-SY-coG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="销量"/>
+                    <connections>
+                        <action selector="salesAction:" destination="c9e-6e-CYf" eventType="touchUpInside" id="UoW-pd-taX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SC5-In-3tg">
+                    <rect key="frame" x="251" y="5" width="124" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="SC5-In-3tg" secondAttribute="height" multiplier="31:10" id="2u6-MI-LHo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="人气"/>
+                    <connections>
+                        <action selector="viewAction:" destination="c9e-6e-CYf" eventType="touchUpInside" id="hBj-KQ-A1R"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GkD-7o-BB3" firstAttribute="leading" secondItem="3rx-4J-O8d" secondAttribute="trailing" constant="1" id="4Gm-uL-gwy"/>
+                <constraint firstItem="GkD-7o-BB3" firstAttribute="width" secondItem="3rx-4J-O8d" secondAttribute="width" id="IhB-kf-RdM"/>
+                <constraint firstItem="GkD-7o-BB3" firstAttribute="centerY" secondItem="c9e-6e-CYf" secondAttribute="centerY" id="MK7-dZ-dgX"/>
+                <constraint firstItem="SC5-In-3tg" firstAttribute="leading" secondItem="GkD-7o-BB3" secondAttribute="trailing" constant="2" id="eLi-Dc-KEX"/>
+                <constraint firstItem="3rx-4J-O8d" firstAttribute="centerY" secondItem="c9e-6e-CYf" secondAttribute="centerY" id="eVR-nv-wWV"/>
+                <constraint firstItem="3rx-4J-O8d" firstAttribute="leading" secondItem="c9e-6e-CYf" secondAttribute="leading" id="fRg-XC-f71"/>
+                <constraint firstAttribute="trailing" secondItem="SC5-In-3tg" secondAttribute="trailing" id="hxu-5j-iVP"/>
+                <constraint firstItem="SC5-In-3tg" firstAttribute="width" secondItem="3rx-4J-O8d" secondAttribute="width" id="nmL-zR-89Y"/>
+                <constraint firstItem="SC5-In-3tg" firstAttribute="centerY" secondItem="c9e-6e-CYf" secondAttribute="centerY" id="w0Y-za-7zV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="priceBtn" destination="3rx-4J-O8d" id="mla-a0-hRx"/>
+                <outlet property="salesBtn" destination="GkD-7o-BB3" id="mVX-6T-wbC"/>
+                <outlet property="viewBtn" destination="SC5-In-3tg" id="N8B-01-ePS"/>
+            </connections>
+        </view>
+    </objects>
+</document>

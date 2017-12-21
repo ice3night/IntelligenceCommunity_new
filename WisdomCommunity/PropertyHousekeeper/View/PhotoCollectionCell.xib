@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PhotoCollectionCell" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="PhotoCollectionCell" id="gTV-IL-0wX" customClass="PhotoCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c7g-ZQ-cRd">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="c7g-ZQ-cRd" secondAttribute="trailing" id="5nd-kJ-jQR"/>
+                <constraint firstItem="c7g-ZQ-cRd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ayh-0m-9rQ"/>
+                <constraint firstItem="c7g-ZQ-cRd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oQR-rY-flh"/>
+                <constraint firstAttribute="bottom" secondItem="c7g-ZQ-cRd" secondAttribute="bottom" id="w8E-r1-d9H"/>
+            </constraints>
+            <connections>
+                <outlet property="image" destination="c7g-ZQ-cRd" id="1L7-CD-GAY"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

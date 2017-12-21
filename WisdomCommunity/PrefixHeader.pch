@@ -1,0 +1,58 @@
+//
+//  PrefixHeader.pch
+//  WisdomCommunity
+//
+//  Created by bridge on 16/12/6.
+//  Copyright © 2016年 bridge. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "Header.h"//头文件
+//宏定义
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define CYScreanW [UIScreen mainScreen].bounds.size.width
+#define CYScreanH [UIScreen mainScreen].bounds.size.height
+#define CQColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define CQColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? YES : NO)
+
+
+#define POSTREQUESTURL @"http://api.longjingwuye.com/api"
+//@"http://api.longjingwuye.com/api"
+
+//@"http://x-79513.vicp.io:16518"
+//
+#define PERSONALDATA    @"Personal_data"//登录后的个人数据
+#define ACCOUNTARRAY    @"SaveLocalAccountData"//保存到本地的账号数据
+#define ACCOUNTDATA     @"Account_data_C" //修改个人账号数据返回，数据格式与PERSONALDATA不一致
+#define TOKEN           @"Token_Data"//token
+#define ACCOUNT         @"Login_Accout"//账号
+#define WHETHERSIGNIN   @"Whether_Sign_In"//是否已签到
+#define CURRENTINTEGRAL @"TheCurrentIntegral"//当前积分
+#define COMDATA         @"Now_Com_Data"//当前小区数据
+#define PROPERTYCPHONE  @"PropertyComplaintsPhone"//物业投诉电话
+#define LOADANIMATION   @"Loading_Animation"//加载动画
+#define BackGroundImage @"http://oi2btqqxs.bkt.clouddn.com/intelCommunity/uploadImg/image/1493014754323.jpg"//官方默认图片
+#define DefaultHeadImage     @"http://7xwtb9.com2.z0.glb.qiniucdn.com/head-01@2x.png"//默认头像
+
+
+#define BackGroundColor   [UIColor colorWithRed:0.961 green:0.961 blue:0.969 alpha:1.00]//背景颜色
+#define ShallowBrownColoe   [UIColor colorWithRed:0.753 green:0.561 blue:0.537 alpha:1.00]//褐色
+#define ShallowGrayColor       [UIColor colorWithRed:0.545 green:0.545 blue:0.545 alpha:1.00]//默认字体颜色（类似黑色）
+#define ShallowBlueColor   [UIColor colorWithRed:0.494 green:0.655 blue:0.925 alpha:1.00]//浅蓝色，默认选中颜色
+//#define FontColor_All      [UIColor colorWithRed:0.345 green:0.345 blue:0.345 alpha:1]//导航栏字体颜色
+#define TheMass_toneAttune [UIColor colorWithRed:0.490 green:0.690 blue:0.937 alpha:1.00]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr, "类名%s\t行号%zd\n%s\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
+#endif /* PrefixHeader_pch */

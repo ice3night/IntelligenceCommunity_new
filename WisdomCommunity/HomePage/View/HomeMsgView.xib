@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeMsgView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeMsgView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kgk-46-69M">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="6"/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.95294117647058818" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="Ky2-A6-FNa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8MC-wj-b9b">
+                    <rect key="frame" x="0.0" y="51" width="414" height="6"/>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.96470588235294119" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="apQ-Sy-ACY"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yuan" translatesAutoresizingMaskIntoConstraints="NO" id="qAc-8x-eK1">
+                    <rect key="frame" x="10" y="25.5" width="6" height="6"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="qTC-bT-qGo">
+                    <rect key="frame" x="396" y="21.5" width="8" height="14"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="龙景社区APP上线了，快点马上抓紧时间快速来围观啊！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlV-KP-4E2">
+                    <rect key="frame" x="31" y="18" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qTC-bT-qGo" secondAttribute="trailing" constant="10" id="8mp-dY-5RL"/>
+                <constraint firstItem="qTC-bT-qGo" firstAttribute="centerY" secondItem="qAc-8x-eK1" secondAttribute="centerY" id="DQU-Jd-LxM"/>
+                <constraint firstItem="qAc-8x-eK1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="F7G-7b-5O2"/>
+                <constraint firstAttribute="trailing" secondItem="TlV-KP-4E2" secondAttribute="trailing" constant="28" id="NDJ-ju-02b"/>
+                <constraint firstItem="Kgk-46-69M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S6e-lp-9L9"/>
+                <constraint firstItem="qAc-8x-eK1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Ssf-KP-aaB"/>
+                <constraint firstAttribute="bottom" secondItem="8MC-wj-b9b" secondAttribute="bottom" id="XDu-U5-X07"/>
+                <constraint firstAttribute="trailing" secondItem="8MC-wj-b9b" secondAttribute="trailing" id="iHM-mE-rwz"/>
+                <constraint firstItem="TlV-KP-4E2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jHd-HB-qKA"/>
+                <constraint firstItem="Kgk-46-69M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oXC-Vj-ppY"/>
+                <constraint firstAttribute="trailing" secondItem="Kgk-46-69M" secondAttribute="trailing" id="pMj-Ri-CnE"/>
+                <constraint firstItem="8MC-wj-b9b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vAO-ZJ-z6r"/>
+                <constraint firstItem="TlV-KP-4E2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="31" id="ztW-zo-xAV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="39" y="-425.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="8" height="14"/>
+        <image name="yuan" width="6" height="6"/>
+    </resources>
+</document>
